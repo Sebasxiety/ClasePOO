@@ -1,7 +1,7 @@
 # ClasePOO
 
 
-Aplicación en ASP.NET Core MVC que implementa un CRUD básico para la entidad **Cliente** usando Entity Framework Core con SQL Server.
+Aplicación en ASP.NET Core MVC (proyecto `ClienteMvc`) que implementa un CRUD básico para la entidad **Cliente** usando Entity Framework Core con SQL Server.
 
 ## Programación Orientada a Objetos (POO)
 
@@ -16,20 +16,20 @@ public class Cliente
 }
 ```
 
-En POO, las clases son plantillas que encapsulan datos y comportamiento. A partir de la clase `Cliente` se crean objetos concretos que se manejan desde el controlador para realizar las operaciones CRUD.
+En POO, las clases son plantillas que encapsulan datos y comportamiento. A partir de la clase `Cliente` se crean objetos concretos que se manejan desde el controlador `ClientesController` para realizar las operaciones CRUD.
 
 ## Ejecución
 
 1. Instalar el SDK de .NET 8 y tener acceso a una instancia de SQL Server.
-2. Configurar la cadena de conexión en `appsettings.json` si es necesario.
-3. Restaurar dependencias y compilar:
+2. Configurar la cadena de conexión en `ClienteMvc/appsettings.json` si es necesario.
+3. Restaurar dependencias y compilar desde la carpeta `ClienteMvc`:
 
    ```bash
    dotnet restore
    dotnet build
    ```
 
-4. Ejecutar la aplicación:
+4. Ejecutar la aplicación desde la carpeta `ClienteMvc`:
    ```bash
    dotnet run
    ```
@@ -39,7 +39,7 @@ En POO, las clases son plantillas que encapsulan datos y comportamiento. A parti
 ## Estructura
 
 - `Models/Cliente.cs`: clase de dominio del cliente.
-- `Data/AppDbContext.cs`: contexto de Entity Framework.
+- `Data/ClienteContext.cs`: contexto de Entity Framework.
 - `Controllers/ClientesController.cs`: controlador MVC con acciones CRUD.
 - `Views/Clientes/`: vistas Razor para las operaciones CRUD.
 - `Program.cs`: configuración de servicios y pipeline de la aplicación.
