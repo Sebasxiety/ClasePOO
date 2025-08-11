@@ -1,7 +1,7 @@
 # ClasePOO
 
 
-Aplicación de ejemplo en ASP.NET Core MVC que implementa un CRUD básico para la entidad **Cliente** usando Entity Framework Core con SQL Server.
+Aplicación en ASP.NET Core MVC que implementa un CRUD básico para la entidad **Cliente** usando Entity Framework Core con SQL Server.
 
 ## Programación Orientada a Objetos (POO)
 
