@@ -1,5 +1,6 @@
 # ClasePOO
 
+
 Aplicación de ejemplo en ASP.NET Core MVC que implementa un CRUD básico para la entidad **Cliente** usando Entity Framework Core con SQL Server.
 
 ## Programación Orientada a Objetos (POO)
@@ -22,15 +23,18 @@ En POO, las clases son plantillas que encapsulan datos y comportamiento. A parti
 1. Instalar el SDK de .NET 8 y tener acceso a una instancia de SQL Server.
 2. Configurar la cadena de conexión en `appsettings.json` si es necesario.
 3. Restaurar dependencias y compilar:
+
    ```bash
    dotnet restore
    dotnet build
    ```
+
 4. Ejecutar la aplicación:
    ```bash
    dotnet run
    ```
 5. Abrir el navegador en `https://localhost:5001` y navegar a `/Clientes`.
+
 
 ## Estructura
 
